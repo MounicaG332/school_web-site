@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Enquiry - Vishal Bharti Public School</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg'); /* Replace with actual background image URL */
+      background-size: cover;
+      background-position: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+      padding: 1rem;
+    }
+
+    .enquiry-form {
+      background: #fff;
+      width: 700px;
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .form-section {
+      padding: 1rem;
+      width: 80%;
+      display: center;
+
+      flex-direction: column;
+    }
+
+    .form-section h2 {
+      margin-bottom: 1rem;
+      color: #004080;
+    }
+
+    .form-section label {
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-section input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .form-section button {
+      padding: 0.8rem;
+      background: #a8b8c9;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background: #eceff1;
+    }
+
+    .image-section {
+      background: #f5f5f5;
+      padding: 1rem;
+      text-align: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .image-section p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 1rem 0 0.5rem;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="enquiry-form">
+      <!-- Form Section -->
+      <div class="form-section">
+        <h2>Admission Enquiry</h2>
+        <form>
+          <label for="parent-name">Parent name</label>
+          <input type="text" id="parent-name" placeholder="Enter parent's name" required>
+
+          <label for="child-name">Child name</label>
+          <input type="text" id="child-name" placeholder="Enter child's name" required>
+
+          <label for="parent-email">Parent email address</label>
+          <input type="email" id="parent-email" placeholder="Enter email address" required>
+
+          <label for="class-admission">Class in which admission is sought</label>
+          <input type="text" id="class-admission" placeholder="Enter class" required>
+
+          <label>Gender</label>
+          <input type="radio" id="gender-boy" name="gender" value="Boy" required> <label for="gender-boy">Boy</label>
+          <input type="radio" id="gender-girl" name="gender" value="Girl" required> <label for="gender-girl">Girl</label>
+
+          <label for="contact-number">Contact number</label>
+          <input type="tel" id="contact-number" placeholder="Enter contact number" required>
+
+          <label for="query">Type your Query</label>
+          <textarea id="query" rows="4" placeholder="Enter your query"></textarea>
+
+          <label for="captcha">Captcha</label>
+          <div style="display: flex; align-items: center; margin-bottom: 0.8rem;">
+            <span style="font-size: 1rem; margin-right: 0.8rem;">a C 7 × y</span>
+            <input type="text" id="captcha" placeholder="Enter code" required>
+          </div>
+       
+          <button><a href="index.html" class="cta-button">Submit</a></button>
+        </form>
+      </div>
+
+      <!-- Image Section -->
+      <!-- <div class="image-section">
+        <p>Admissions OPEN for Session 2025-26</p>
+        <img src="school-banner.jpg" alt="Vishal Bharti Public School"> Replace with actual banner image URL -->
+        <!-- <p>Innovate, Educate, Inspire.</p> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
