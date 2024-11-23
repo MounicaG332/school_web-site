@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infrastructure</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #e0f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .infrastructure {
+      max-width: 800px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .infrastructure h1 {
+      font-size: 1.8rem;
+      color: #004080;
+      margin-bottom: 1rem;
+    }
+
+    .infrastructure p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Optional animation effect */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Infrastructure</h1>
+  </header>
+  <main>
+    <section class="infrastructure fade-in">
+      <h1>Our Infrastructure</h1>
+      <p>
+        Our school infrastructure is equipped with state-of-the-art facilities, spacious classrooms, advanced laboratories, and a vibrant library to support holistic development for students.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Vishal Bharti School</p>
+  </footer>
+  <script>
+    // JavaScript to add fade-in effect after page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const section = document.querySelector('.infrastructure');
+      section.classList.add('fade-in');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!-- <% layout('layout') %> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    /* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e0f7fa;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* About Section */
+.about-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Milestones Section */
+.milestones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.milestone {
+  flex: 1 1 calc(33.333% - 20px);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.milestone h3 {
+  font-size: 1.5rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.milestone p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .milestones {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .milestone {
+    flex: 1 1 100%;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+
+  .milestone h3 {
+    font-size: 1.25rem;
+  }
+}
+
+  </style>
+<section class="about-section">
+  <h1>About Vishal Bharti School</h1>
+  <p>At Vishal Bharti Senior Secondary School, we are committed to nurturing excellence in education. Our mission is to empower students with knowledge, confidence, and leadership skills to excel in the modern world.</p>
+</section>
+
+<section class="milestones">
+  <div class="milestone">
+    <img src="images\img01.webp" alt="milestone">
+    <h3>50+ Years of Excellence</h3>
+    <p>Inspiring generations of leaders since 1974.</p>
+  </div>
+  <div class="milestone">
+    <img src="images\img13.webp" alt="milestone">
+    <h3>World-Class Teachers</h3>
+    <p>Expert faculty passionate about shaping the future.</p>
+  </div>
+  <div class="milestone">
+    <img src="images\img15.webp" alt="milestone">
+    <h3>Top-Notch Results</h3>
+    <p>Consistent academic excellence year after year.</p>
+  </div>
+</section>

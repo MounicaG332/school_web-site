@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - Curriculum</title>
+  <style>
+    /* General Reset */
+    body, h1, p {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Add a hover effect for interactive elements (optional) */
+    footer p:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curriculum</h1>
+  </header>
+  <main>
+    <p>Our curriculum is designed to nurture critical thinking and creativity, aligned with modern educational standards.</p>
+    <button id="learnMoreBtn">Learn More</button>
+    <p id="moreInfo" style="display: none; margin-top: 1rem;">Our curriculum follows the latest educational guidelines and includes interactive activities to engage students.</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Vishal Bharti School. All Rights Reserved.</p>
+  </footer>
+  <script>
+    // JavaScript to handle "Learn More" button functionality
+    const learnMoreBtn = document.getElementById('learnMoreBtn');
+    const moreInfo = document.getElementById('moreInfo');
+
+    learnMoreBtn.addEventListener('click', () => {
+      if (moreInfo.style.display === 'none') {
+        moreInfo.style.display = 'block';
+        learnMoreBtn.textContent = 'Show Less';
+      } else {
+        moreInfo.style.display = 'none';
+        learnMoreBtn.textContent = 'Learn More';
+      }
+    });
+  </script>
+</body>
+</html>
